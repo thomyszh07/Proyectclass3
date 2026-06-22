@@ -6,7 +6,7 @@ function lanzarDado() { /*se ejecuta cuando le das click al boton lanzar dado de
 
     // Genera un número pseudoaleatorio entre 1 y 6
     let resultado = Math.floor(Math.random() * 6) + 1; /*Math.floor es una función de JavaScript que redondea un número hacia abajo al entero más cercano. */
-                                                       /*es una función de JavaScript que genera un número decimal pseudoaleatorio entre 0 (incluido) y 1*/
+    /*es una función de JavaScript que genera un número decimal pseudoaleatorio entre 0 (incluido) y 1*/
     // Mostrar resultado numérico
     document.getElementById("resultado").textContent = resultado; /*Muestra el número en el html*/
 
