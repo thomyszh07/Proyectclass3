@@ -1,94 +1,107 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+/* Selector universal:
+   Aplica estos estilos a todos los elementos de la página */
+   *{
+    margin:0; /* Elimina márgenes predeterminados */
+    padding:0; /* Elimina espacios internos predeterminados */
+    box-sizing:border-box; /* Incluye padding y borde dentro del tamaño total */
+    font-family:'Segoe UI', sans-serif; /* Fuente principal */
 }
 
+/* Estilos generales de la página */
 body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#17172e,#25274d,#2f3164);
-    color:white;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:40px 20px;
+    min-height:100vh; /* Ocupa toda la altura de la ventana */
+    background:linear-gradient(135deg,#17172e,#25274d,#2f3164); /* Fondo degradado */
+    color:white; /* Color del texto */
+    display:flex; /* Activa Flexbox */
+    flex-direction:column; /* Organiza elementos en columna */
+    align-items:center; /* Centra horizontalmente */
+    padding:40px 20px; /* Espaciado interno */
 }
 
+/* Título principal */
 h1{
-    font-size:3rem;
-    margin-bottom:15px;
+    font-size:3rem; /* Tamaño grande del texto */
+    margin-bottom:15px; /* Separación inferior */
 }
 
+/* Párrafo descriptivo */
 p{
-    max-width:700px;
-    text-align:center;
-    color:#d0d0d0;
-    line-height:1.6;
-    margin-bottom:30px;
+    max-width:700px; /* Ancho máximo */
+    text-align:center; /* Texto centrado */
+    color:#d0d0d0; /* Color gris claro */
+    line-height:1.6; /* Espaciado entre líneas */
+    margin-bottom:30px; /* Separación inferior */
 }
 
+/* Contenedor visual del dado */
 #dado{
-    width:140px;
-    height:140px;
-    background:white;
-    color:black;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:90px;
-    margin:20px 0;
-    box-shadow:0 15px 30px rgba(0,0,0,.4);
+    width:140px; /* Ancho */
+    height:140px; /* Alto */
+    background:white; /* Fondo blanco */
+    color:black; /* Color del símbolo */
+    border-radius:20px; /* Bordes redondeados */
+    display:flex; /* Activa Flexbox */
+    justify-content:center; /* Centra horizontalmente */
+    align-items:center; /* Centra verticalmente */
+    font-size:90px; /* Tamaño del símbolo del dado */
+    margin:20px 0; /* Margen superior e inferior */
+    box-shadow:0 15px 30px rgba(0,0,0,.4); /* Sombra */
 }
 
+/* Título del resultado */
 h2{
-    margin:20px 0;
-    font-size:2rem;
+    margin:20px 0; /* Espaciado arriba y abajo */
+    font-size:2rem; /* Tamaño del texto */
 }
 
+/* Número obtenido */
 #resultado{
-    color:#4ee7df;
+    color:#4ee7df; /* Color destacado */
 }
 
+/* Botón de lanzamiento */
 button{
-    background:#ff6b6b;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    border-radius:50px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-    margin-bottom:30px;
+    background:#ff6b6b; /* Color de fondo */
+    color:white; /* Color del texto */
+    border:none; /* Sin borde */
+    padding:15px 30px; /* Espaciado interno */
+    border-radius:50px; /* Bordes redondeados */
+    font-size:18px; /* Tamaño del texto */
+    font-weight:bold; /* Texto en negrita */
+    cursor:pointer; /* Cambia el cursor al pasar encima */
+    transition:.3s; /* Animación suave */
+    margin-bottom:30px; /* Separación inferior */
 }
 
+/* Efecto al pasar el mouse sobre el botón */
 button:hover{
-    transform:translateY(-3px);
-    background:#ff5555;
+    transform:translateY(-3px); /* Eleva ligeramente el botón */
+    background:#ff5555; /* Cambia el color */
 }
 
+/* Título de la sección de frecuencias */
 h3{
-    margin-bottom:20px;
-    color:#4ee7df;
+    margin-bottom:20px; /* Separación inferior */
+    color:#4ee7df; /* Color destacado */
 }
 
+/* Contenedor de las frecuencias */
 #frecuencias{
-    list-style:none;
-    width:300px;
-    background:#2a2d55;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    list-style:none; /* Elimina las viñetas */
+    width:300px; /* Ancho fijo */
+    background:#2a2d55; /* Fondo */
+    padding:20px; /* Espaciado interno */
+    border-radius:15px; /* Bordes redondeados */
+    box-shadow:0 10px 25px rgba(0,0,0,.3); /* Sombra */
 }
 
+/* Cada elemento de la lista de frecuencias */
 #frecuencias li{
-    padding:10px;
-    margin:8px 0;
-    background:#1f2142;
-    border-radius:8px;
-    font-size:18px;
-    display:flex;
-    justify-content:space-between;
+    padding:10px; /* Espacio interno */
+    margin:8px 0; /* Separación entre elementos */
+    background:#1f2142; /* Fondo de cada fila */
+    border-radius:8px; /* Bordes redondeados */
+    font-size:18px; /* Tamaño del texto */
+    display:flex; /* Activa Flexbox */
+    justify-content:space-between; /* Distribuye contenido a los extremos */
 }
