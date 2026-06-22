@@ -1,101 +1,94 @@
-:root{
-    --bg:#1e1e2f;
-    --panel:#2a2a40;
-    --accent:#ff6b6b;
-    --accent2:#4ecdc4;
-    --text:#f1f1f1;
-}
-
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body{
-    margin:0;
     min-height:100vh;
+    background:linear-gradient(135deg,#17172e,#25274d,#2f3164);
+    color:white;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
-    background:linear-gradient(135deg,#1e1e2f,#2a2a40);
-    font-family:'Segoe UI', Arial, sans-serif;
-    color:var(--text);
-    padding:20px;
-}
-
-.contenedor{
-    background:var(--panel);
-    width:450px;
-    max-width:100%;
-    padding:30px;
-    border-radius:16px;
-    text-align:center;
-    box-shadow:0 8px 24px rgba(0,0,0,.35);
+    padding:40px 20px;
 }
 
 h1{
-    margin-top:0;
-    color:white;
+    font-size:3rem;
+    margin-bottom:15px;
 }
 
 p{
-    color:#bdbdbd;
-    margin-bottom:25px;
-    line-height:1.5;
+    max-width:700px;
+    text-align:center;
+    color:#d0d0d0;
+    line-height:1.6;
+    margin-bottom:30px;
 }
 
-.dado{
-    font-size:110px;
+#dado{
+    width:140px;
+    height:140px;
+    background:white;
+    color:black;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
     margin:20px 0;
-    transition:transform .5s ease;
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
 }
 
 h2{
-    color:var(--accent2);
-    margin-bottom:20px;
+    margin:20px 0;
+    font-size:2rem;
+}
+
+#resultado{
+    color:#4ee7df;
 }
 
 button{
-    background:var(--accent);
+    background:#ff6b6b;
     color:white;
     border:none;
-    padding:12px 28px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:1rem;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:18px;
     font-weight:bold;
+    cursor:pointer;
     transition:.3s;
+    margin-bottom:30px;
 }
 
 button:hover{
-    background:#ff8787;
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+    background:#ff5555;
 }
 
-.estadisticas{
-    margin-top:25px;
-    background:#22223a;
-    padding:15px;
-    border-radius:12px;
+h3{
+    margin-bottom:20px;
+    color:#4ee7df;
 }
 
-.estadisticas h3{
-    margin-top:0;
-    color:var(--accent2);
-    border-bottom:1px solid #3f3f5a;
-    padding-bottom:8px;
-}
-
-ul{
+#frecuencias{
     list-style:none;
-    padding:0;
-    margin:0;
+    width:300px;
+    background:#2a2d55;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
-li{
-    background:#2f2f4a;
-    margin:8px 0;
+#frecuencias li{
     padding:10px;
+    margin:8px 0;
+    background:#1f2142;
     border-radius:8px;
-    color:#f1f1f1;
-    font-weight:500;
+    font-size:18px;
+    display:flex;
+    justify-content:space-between;
 }
